@@ -1,8 +1,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_3/models/models.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_application_3/screens/cart_screen.dart';
-
+import 'package:flutter_application_3/cubits.dart';
 class ItemCard extends StatefulWidget {
   
    ItemCard({super.key,required this.title, required this.imgLink,required this.inStock, required this.price, required this.qty});
@@ -47,13 +48,14 @@ class _ItemCardState extends State<ItemCard> {
       );
       return;
     }
-    setState(() {
+setState(() {
        if (widget.qty > 0){
         widget.qty--;
 
-       } 
+       }  });
+  
 
-    });
+   
     if (widget.qty <= 0) {
       ScaffoldMessenger.of(context).showMaterialBanner( MaterialBanner(content: Text('Cant decrement further..'), actions:[
 
@@ -79,9 +81,10 @@ class _ItemCardState extends State<ItemCard> {
               child: Container(
                 child:
                     ElevatedButton(onPressed: () {
-                      setState(() {
-                        cartedList.add(Item(title: widget.title, img: widget.imgLink, inStock: widget.inStock, price: widget.price, qty: widget.qty));
-                      });
+                      final newItem = Item(title: widget.title, img: widget.imgLink, inStock: widget.inStock, price: widget.price, qty: widget.qty);
+                      context.read<CartonCubit>().addItem(newItem);
+
+                   
 
                       Navigator.pop(context);
                       ScaffoldMessenger.of(context).showSnackBar(

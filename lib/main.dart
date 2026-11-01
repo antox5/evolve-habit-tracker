@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/cubits.dart';
 import 'package:flutter_application_3/models/models.dart';
 import 'package:flutter_application_3/screens/cart_screen.dart';
 import 'package:flutter_application_3/screens/product_screen.dart';
 import 'package:flutter_application_3/widgets/widgets.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
+
   runApp(const MyApp());
 }
 
@@ -20,12 +23,13 @@ class MyApp extends StatelessWidget {
       
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        indicatorColor: Colors.deepOrange ,
       
         useMaterial3: true,
         primaryColor: Colors.white
         
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Product Store'),
     );
   }
 }
