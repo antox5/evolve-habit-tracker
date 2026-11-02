@@ -1,6 +1,8 @@
 # 🚀 Evolve! — Modern Habit Tracker & Growth Companion
 
 **Evolve!** is a high-performance, cross-platform mobile application designed to help users build discipline, maintain consistency, and track daily personal growth. Built with Flutter, Firebase, and state-of-the-art state management architecture.
+# Web App Link
+Click to use my app on web! -> https://sweetsheep-bf4ac.web.app/
 
 ---
 ## Screenshots
