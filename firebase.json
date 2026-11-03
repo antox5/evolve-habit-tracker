@@ -1,0 +1,50 @@
+{
+    "flutter": {
+        "platforms": {
+            "android": {
+                "default": {
+                    "projectId": "sweetsheep-bf4ac",
+                    "appId": "1:139283657171:android:e5141d543bd833f2727f26",
+                    "fileOutput": "android/app/google-services.json"
+                }
+            },
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "sweetsheep-bf4ac",
+                    "configurations": {
+                        "android": "1:139283657171:android:e5141d543bd833f2727f26",
+                        "web": "1:139283657171:web:543c128b3a54583b727f26"
+                    }
+                }
+            }
+        }
+    },
+    "functions": [
+        {
+            "source": "functions",
+            "codebase": "default",
+            "disallowLegacyRuntimeConfig": true,
+            "ignore": [
+                "node_modules",
+                ".git",
+                "firebase-debug.log",
+                "firebase-debug.*.log",
+                "*.local"
+            ]
+        }
+    ],
+    "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

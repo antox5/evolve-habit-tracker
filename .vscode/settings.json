@@ -1,3 +1,5 @@
 {
-    "cmake.sourceDirectory": "C:/Users/Anto Rafin/Downloads/flutter_application_3/linux"
+    "cmake.sourceDirectory": "D:/flutter_application_3/linux",
+    "cmake.ignoreCMakeListsMissing": true,
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
