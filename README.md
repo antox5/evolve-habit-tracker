@@ -13,7 +13,7 @@ Click to use my app on web! -> https://sweetsheep-bf4ac.firebaseapp.com/ (or) ht
 <img width="320" height="687" alt="image" src="https://github.com/user-attachments/assets/ae058517-c135-4a93-9ba1-d2b207c78c77" />
 <img width="330" height="691" alt="image" src="https://github.com/user-attachments/assets/adabdf08-1b9d-4600-bb66-0558a8a8ad78" />
 <img width="323" height="686" alt="image" src="https://github.com/user-attachments/assets/8b7bb54f-2ab5-4bad-ab92-4c7a3490dd69" />
-
+<img width="1915" height="933" alt="image" src="https://github.com/user-attachments/assets/a9cc6c00-f0c0-4d43-94e1-5485be2a44db" />
 ## ✨ Features
 
 - 📅 **Habit Tracking:** Set up, track, and manage your daily habits seamlessly.
